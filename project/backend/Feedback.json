@@ -1,0 +1,42 @@
+[
+    {
+        "ID": 1,
+        "Evaluation": "L'activité était interactive, mais j'aurais aimé plus d'explications."
+    },
+    {
+        "ID": 2,
+        "Evaluation": "Présentation bien structurée, mais trop dense en informations."
+    },
+    {
+        "ID": 3,
+        "Evaluation": "Les échanges étaient intéressants, mais certains sujets étaient peu approfondis."
+    },
+    {
+        "ID": 4,
+        "Evaluation": "Une super expérience de collaboration, mais le temps était trop court !"
+    },
+    {
+        "ID": 5,
+        "Evaluation": "J'ai rencontré des experts très inspirants, mais l'organisation était confuse."
+    },
+    {
+        "ID": 6,
+        "Evaluation": "Bonne introduction au sujet, mais le rythme était trop rapide."
+    },
+    {
+        "ID": 7,
+        "Evaluation": "Contenu pertinent sur l'impact de l'IA, mais manque d'exemples concrets."
+    },
+    {
+        "ID": 8,
+        "Evaluation": "J'ai reçu de bons conseils sur mon projet, très utile !"
+    },
+    {
+        "ID": 9,
+        "Evaluation": "Bon équilibre entre théorie et pratique, mais un peu court."
+    },
+    {
+        "ID": 10,
+        "Evaluation": "Sujet fascinant, mais j'aurais aimé plus de démonstrations en direct."
+    }
+]
