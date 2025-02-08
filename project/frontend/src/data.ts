@@ -1,180 +1,183 @@
 import { Feedback } from './types';
 
+export type ActivityType = 'Activité 1' | 'Activité 2' | 'Activité 3' | 'Activité 4';
+export type ParticipantProfile = 'Étudiant' | 'Enseignant(e) / Professeur' | 'Chercheur(se) / Scientifique' | 'Ingénieur(e)';
+
 export const mockFeedback: Feedback[] = [
   {
     id: '1',
     rating: 5,
-    comment: "Love the new features! The interface is very intuitive.",
-    category: 'General',
-    timestamp: '2024-03-15T10:30:00Z',
+    comment: "L’atelier était bien structuré et les explications étaient claires.",
+    category: 'Activité 1',
+    timestamp: '2024-03-20T09:00:00Z',
     email: 'user1@example.com',
     sentiment: 'Positive',
-    participantProfile: 'End User',
+    participantProfile: 'Étudiant',
     checkInData: [
-      { category: 'Bug', initialInterest: 3, finalRating: 4 },
-      { category: 'Feature Request', initialInterest: 5, finalRating: 5 },
-      { category: 'General', initialInterest: 4, finalRating: 5 },
-      { category: 'Support', initialInterest: 3, finalRating: 4 }
+      { category: 'Activité 1', initialInterest: 4, finalRating: 5 },
+      { category: 'Activité 2', initialInterest: 3, finalRating: 4 },
+      { category: 'Activité 3', initialInterest: 2, finalRating: 3 },
+      { category: 'Activité 4', initialInterest: 5, finalRating: 5 }
     ],
     checkOutData: [
-      { category: 'Bug', initialInterest: 3, finalRating: 4 },
-      { category: 'Feature Request', initialInterest: 5, finalRating: 4 },
-      { category: 'General', initialInterest: 4, finalRating: 5 },
-      { category: 'Support', initialInterest: 3, finalRating: 5 }
+      { category: 'Activité 1', initialInterest: 4, finalRating: 5 },
+      { category: 'Activité 2', initialInterest: 3, finalRating: 4 },
+      { category: 'Activité 3', initialInterest: 2, finalRating: 3 },
+      { category: 'Activité 4', initialInterest: 5, finalRating: 5 }
     ]
   },
   {
     id: '2',
-    rating: 4,
-    comment: "Would love to see dark mode implemented.",
-    category: 'Feature Request',
-    timestamp: '2024-03-14T15:20:00Z',
+    rating: 3,
+    comment: "Bonne conférence, mais j’aurais aimé plus d’exemples pratiques.",
+    category: 'Activité 2',
+    timestamp: '2024-03-19T14:30:00Z',
     email: 'user2@example.com',
     sentiment: 'Neutral',
-    participantProfile: 'Designer',
+    participantProfile: 'Enseignant(e) / Professeur',
     checkInData: [
-      { category: 'Bug', initialInterest: 2, finalRating: 3 },
-      { category: 'Feature Request', initialInterest: 5, finalRating: 4 },
-      { category: 'General', initialInterest: 3, finalRating: 3 },
-      { category: 'Support', initialInterest: 2, finalRating: 4 }
+      { category: 'Activité 1', initialInterest: 3, finalRating: 3 },
+      { category: 'Activité 2', initialInterest: 5, finalRating: 3 },
+      { category: 'Activité 3', initialInterest: 4, finalRating: 4 },
+      { category: 'Activité 4', initialInterest: 2, finalRating: 3 }
     ],
     checkOutData: [
-      { category: 'Bug', initialInterest: 2, finalRating: 2 },
-      { category: 'Feature Request', initialInterest: 5, finalRating: 5 },
-      { category: 'General', initialInterest: 3, finalRating: 4 },
-      { category: 'Support', initialInterest: 2, finalRating: 3 }
+      { category: 'Activité 1', initialInterest: 3, finalRating: 3 },
+      { category: 'Activité 2', initialInterest: 5, finalRating: 3 },
+      { category: 'Activité 3', initialInterest: 4, finalRating: 4 },
+      { category: 'Activité 4', initialInterest: 2, finalRating: 3 }
     ]
   },
   {
     id: '3',
-    rating: 2,
-    comment: "Found several bugs in the latest release. Need immediate fixes.",
-    category: 'Bug',
-    timestamp: '2024-03-13T09:15:00Z',
+    rating: 4,
+    comment: "J’ai apprécié les débats et l’interaction avec les experts.",
+    category: 'Activité 3',
+    timestamp: '2024-03-18T16:00:00Z',
     email: 'user3@example.com',
-    sentiment: 'Negative',
-    participantProfile: 'Developer',
+    sentiment: 'Positive',
+    participantProfile: 'Chercheur(se) / Scientifique',
     checkInData: [
-      { category: 'Bug', initialInterest: 5, finalRating: 2 },
-      { category: 'Feature Request', initialInterest: 3, finalRating: 3 },
-      { category: 'General', initialInterest: 2, finalRating: 2 },
-      { category: 'Support', initialInterest: 4, finalRating: 3 }
+      { category: 'Activité 1', initialInterest: 4, finalRating: 4 },
+      { category: 'Activité 2', initialInterest: 3, finalRating: 4 },
+      { category: 'Activité 3', initialInterest: 5, finalRating: 5 },
+      { category: 'Activité 4', initialInterest: 2, finalRating: 3 }
     ],
     checkOutData: [
-      { category: 'Bug', initialInterest: 5, finalRating: 1 },
-      { category: 'Feature Request', initialInterest: 3, finalRating: 2 },
-      { category: 'General', initialInterest: 2, finalRating: 3 },
-      { category: 'Support', initialInterest: 4, finalRating: 2 }
+      { category: 'Activité 1', initialInterest: 4, finalRating: 4 },
+      { category: 'Activité 2', initialInterest: 3, finalRating: 4 },
+      { category: 'Activité 3', initialInterest: 5, finalRating: 5 },
+      { category: 'Activité 4', initialInterest: 2, finalRating: 3 }
     ]
   },
   {
     id: '4',
-    rating: 5,
-    comment: "The support team was incredibly helpful in resolving my issues.",
-    category: 'Support',
-    timestamp: '2024-03-12T14:45:00Z',
+    rating: 2,
+    comment: "Trop théorique, j’aurais aimé plus d’interactivité.",
+    category: 'Activité 4',
+    timestamp: '2024-03-17T11:15:00Z',
     email: 'user4@example.com',
-    sentiment: 'Positive',
-    participantProfile: 'End User',
+    sentiment: 'Negative',
+    participantProfile: 'Ingénieur(e)',
     checkInData: [
-      { category: 'Bug', initialInterest: 2, finalRating: 4 },
-      { category: 'Feature Request', initialInterest: 3, finalRating: 4 },
-      { category: 'General', initialInterest: 4, finalRating: 5 },
-      { category: 'Support', initialInterest: 5, finalRating: 5 }
+      { category: 'Activité 1', initialInterest: 5, finalRating: 2 },
+      { category: 'Activité 2', initialInterest: 4, finalRating: 3 },
+      { category: 'Activité 3', initialInterest: 2, finalRating: 2 },
+      { category: 'Activité 4', initialInterest: 3, finalRating: 2 }
     ],
     checkOutData: [
-      { category: 'Bug', initialInterest: 2, finalRating: 3 },
-      { category: 'Feature Request', initialInterest: 3, finalRating: 4 },
-      { category: 'General', initialInterest: 4, finalRating: 4 },
-      { category: 'Support', initialInterest: 5, finalRating: 5 }
+      { category: 'Activité 1', initialInterest: 5, finalRating: 2 },
+      { category: 'Activité 2', initialInterest: 4, finalRating: 3 },
+      { category: 'Activité 3', initialInterest: 2, finalRating: 2 },
+      { category: 'Activité 4', initialInterest: 3, finalRating: 2 }
     ]
   },
   {
     id: '5',
-    rating: 3,
-    comment: "Some features are great, others need improvement.",
-    category: 'General',
-    timestamp: '2024-03-11T11:30:00Z',
+    rating: 5,
+    comment: "J’ai adoré l’explication des concepts et la pratique guidée.",
+    category: 'Activité 1',
+    timestamp: '2024-03-16T13:45:00Z',
     email: 'user5@example.com',
-    sentiment: 'Neutral',
-    participantProfile: 'Manager',
+    sentiment: 'Positive',
+    participantProfile: 'Étudiant',
     checkInData: [
-      { category: 'Bug', initialInterest: 4, finalRating: 3 },
-      { category: 'Feature Request', initialInterest: 4, finalRating: 3 },
-      { category: 'General', initialInterest: 3, finalRating: 3 },
-      { category: 'Support', initialInterest: 3, finalRating: 4 }
+      { category: 'Activité 1', initialInterest: 4, finalRating: 5 },
+      { category: 'Activité 2', initialInterest: 3, finalRating: 3 },
+      { category: 'Activité 3', initialInterest: 5, finalRating: 5 },
+      { category: 'Activité 4', initialInterest: 2, finalRating: 3 }
     ],
     checkOutData: [
-      { category: 'Bug', initialInterest: 4, finalRating: 2 },
-      { category: 'Feature Request', initialInterest: 4, finalRating: 3 },
-      { category: 'General', initialInterest: 3, finalRating: 3 },
-      { category: 'Support', initialInterest: 3, finalRating: 4 }
+      { category: 'Activité 1', initialInterest: 4, finalRating: 5 },
+      { category: 'Activité 2', initialInterest: 3, finalRating: 3 },
+      { category: 'Activité 3', initialInterest: 5, finalRating: 5 },
+      { category: 'Activité 4', initialInterest: 2, finalRating: 3 }
     ]
   },
   {
     id: '6',
-    rating: 4,
-    comment: "Great improvements in the UI/UX design.",
-    category: 'Feature Request',
-    timestamp: '2024-03-10T16:20:00Z',
+    rating: 1,
+    comment: "Manque de matériel pratique pour compléter les démonstrations.",
+    category: 'Activité 2',
+    timestamp: '2024-03-15T10:30:00Z',
     email: 'user6@example.com',
-    sentiment: 'Positive',
-    participantProfile: 'Designer',
+    sentiment: 'Negative',
+    participantProfile: 'Enseignant(e) / Professeur',
     checkInData: [
-      { category: 'Bug', initialInterest: 3, finalRating: 4 },
-      { category: 'Feature Request', initialInterest: 5, finalRating: 5 },
-      { category: 'General', initialInterest: 4, finalRating: 4 },
-      { category: 'Support', initialInterest: 2, finalRating: 3 }
+      { category: 'Activité 1', initialInterest: 3, finalRating: 1 },
+      { category: 'Activité 2', initialInterest: 2, finalRating: 1 },
+      { category: 'Activité 3', initialInterest: 4, finalRating: 3 },
+      { category: 'Activité 4', initialInterest: 5, finalRating: 4 }
     ],
     checkOutData: [
-      { category: 'Bug', initialInterest: 3, finalRating: 3 },
-      { category: 'Feature Request', initialInterest: 5, finalRating: 4 },
-      { category: 'General', initialInterest: 4, finalRating: 4 },
-      { category: 'Support', initialInterest: 2, finalRating: 3 }
+      { category: 'Activité 1', initialInterest: 3, finalRating: 1 },
+      { category: 'Activité 2', initialInterest: 2, finalRating: 1 },
+      { category: 'Activité 3', initialInterest: 4, finalRating: 3 },
+      { category: 'Activité 4', initialInterest: 5, finalRating: 4 }
     ]
   },
   {
     id: '7',
-    rating: 1,
-    comment: "Critical security issues need to be addressed immediately.",
-    category: 'Bug',
-    timestamp: '2024-03-09T08:45:00Z',
+    rating: 4,
+    comment: "Le format interactif était excellent, mais certains sujets manquaient de profondeur.",
+    category: 'Activité 3',
+    timestamp: '2024-03-14T15:00:00Z',
     email: 'user7@example.com',
-    sentiment: 'Negative',
-    participantProfile: 'Developer',
+    sentiment: 'Positive',
+    participantProfile: 'Chercheur(se) / Scientifique',
     checkInData: [
-      { category: 'Bug', initialInterest: 5, finalRating: 1 },
-      { category: 'Feature Request', initialInterest: 2, finalRating: 2 },
-      { category: 'General', initialInterest: 3, finalRating: 2 },
-      { category: 'Support', initialInterest: 4, finalRating: 2 }
+      { category: 'Activité 1', initialInterest: 3, finalRating: 4 },
+      { category: 'Activité 2', initialInterest: 5, finalRating: 4 },
+      { category: 'Activité 3', initialInterest: 4, finalRating: 4 },
+      { category: 'Activité 4', initialInterest: 2, finalRating: 3 }
     ],
     checkOutData: [
-      { category: 'Bug', initialInterest: 5, finalRating: 1 },
-      { category: 'Feature Request', initialInterest: 2, finalRating: 2 },
-      { category: 'General', initialInterest: 3, finalRating: 1 },
-      { category: 'Support', initialInterest: 4, finalRating: 2 }
+      { category: 'Activité 1', initialInterest: 3, finalRating: 4 },
+      { category: 'Activité 2', initialInterest: 5, finalRating: 4 },
+      { category: 'Activité 3', initialInterest: 4, finalRating: 4 },
+      { category: 'Activité 4', initialInterest: 2, finalRating: 3 }
     ]
   },
   {
     id: '8',
     rating: 5,
-    comment: "Documentation is comprehensive and well-organized.",
-    category: 'Support',
-    timestamp: '2024-03-08T13:15:00Z',
+    comment: "Un excellent équilibre entre théorie et pratique.",
+    category: 'Activité 4',
+    timestamp: '2024-03-13T10:15:00Z',
     email: 'user8@example.com',
     sentiment: 'Positive',
-    participantProfile: 'Developer',
+    participantProfile: 'Ingénieur(e)',
     checkInData: [
-      { category: 'Bug', initialInterest: 4, finalRating: 4 },
-      { category: 'Feature Request', initialInterest: 3, finalRating: 4 },
-      { category: 'General', initialInterest: 4, finalRating: 5 },
-      { category: 'Support', initialInterest: 5, finalRating: 5 }
+      { category: 'Activité 1', initialInterest: 4, finalRating: 5 },
+      { category: 'Activité 2', initialInterest: 3, finalRating: 4 },
+      { category: 'Activité 3', initialInterest: 2, finalRating: 4 },
+      { category: 'Activité 4', initialInterest: 5, finalRating: 5 }
     ],
     checkOutData: [
-      { category: 'Bug', initialInterest: 4, finalRating: 5 },
-      { category: 'Feature Request', initialInterest: 3, finalRating: 4 },
-      { category: 'General', initialInterest: 4, finalRating: 5 },
-      { category: 'Support', initialInterest: 5, finalRating: 5 }
+      { category: 'Activité 1', initialInterest: 4, finalRating: 5 },
+      { category: 'Activité 2', initialInterest: 3, finalRating: 4 },
+      { category: 'Activité 3', initialInterest: 2, finalRating: 4 },
+      { category: 'Activité 4', initialInterest: 5, finalRating: 5 }
     ]
   }
 ];

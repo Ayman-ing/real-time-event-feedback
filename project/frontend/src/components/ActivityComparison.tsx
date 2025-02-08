@@ -72,14 +72,14 @@ export function ActivityComparison({ feedback }: Props) {
         label: 'Initial Interest',
         data: averageInitialInterest,
         backgroundColor: activityColors['Initial Interest'],
-        borderColor: 'white',
+        borderColor: 'blue',
         borderWidth: 1,
       },
       {
         label: 'Final Rating',
         data: averageFinalRating,
         backgroundColor: activityColors['Final Rating'],
-        borderColor: 'white',
+        borderColor: 'blue',
         borderWidth: 1,
       }
     ]
@@ -115,7 +115,7 @@ export function ActivityComparison({ feedback }: Props) {
   };
 
   return (
-    <div className="bg-white p-6 rounded-lg shadow-md">
+    <div className="bg-blue p-6 rounded-lg shadow-md">
       <div className="flex items-center gap-2 mb-4">
         <ArrowLeftRight className="text-indigo-500" />
         <h3 className="text-lg font-semibold">Activity Interest Comparison</h3>

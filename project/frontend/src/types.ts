@@ -1,6 +1,6 @@
 export type Sentiment = 'Positive' | 'Neutral' | 'Negative';
-export type ActivityType = 'Bug' | 'Feature Request' | 'General' | 'Support';
-export type ParticipantProfile = 'Developer' | 'Designer' | 'Manager' | 'End User';
+export type ActivityType = 'Activité 1' | 'Activité 2' | 'Activité 3' | 'Activité 4';
+export type ParticipantProfile = 'Étudiant' | 'Enseignant(e) / Professeur' | 'Chercheur(se) / Scientifique' | 'Ingénieur(e)';
 
 export interface ActivityFeedback {
   initialInterest: number; // 1-5 scale

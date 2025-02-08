@@ -34,19 +34,21 @@ const sentimentColors = {
   'Negative': '#F87171'
 };
 
-const activityColors = {
-  'Bug': '#FF6B6B',
-  'Feature Request': '#4ECDC4',
-  'General': '#45B7D1',
-  'Support': '#96CEB4'
+const activityColors: Record<ActivityType, string> = {
+  'Activité 1': '#FF6B6B',  // Red
+  'Activité 2': '#4ECDC4',  // Turquoise
+  'Activité 3': '#45B7D1',  // Light Blue
+  'Activité 4': '#96CEB4'   // Light Green
 };
 
-const profileColors = {
-  'Developer': '#8B5CF6',
-  'Designer': '#EC4899',
-  'Manager': '#3B82F6',
-  'End User': '#10B981'
+const profileColors: Record<ParticipantProfile, string> = {
+  'Étudiant': '#8B5CF6',  // Purple
+  'Enseignant(e) / Professeur': '#EC4899',  // Pink
+  'Chercheur(se) / Scientifique': '#3B82F6',  // Blue
+  'Ingénieur(e)': '#10B981'  // Green
 };
+
+export { activityColors, profileColors };
 
 export function FeedbackStats({ feedback }: Props) {
   const averageRating = feedback.reduce((acc, curr) => acc + curr.rating, 0) / feedback.length;

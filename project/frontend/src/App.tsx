@@ -5,7 +5,7 @@ import { FeedbackStats } from './components/FeedbackStats';
 import { FeedbackList } from './components/FeedbackList';
 import { CheckInForm } from './components/CheckInForm';
 
-const categories = ['All', 'Bug', 'Feature Request', 'General', 'Support'];
+const categories = ['All', 'Activité 1', 'Activité 2', 'Activité 3', 'Activité 4'];
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState('All');
